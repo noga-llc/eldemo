@@ -39,71 +39,117 @@
 ええ、育児のことならなんでも聞いてくださいね。[l][cm]
 
 #yuuta
-じつは最近、自分の子どもが、お茶碗やお皿を箸でコンコンと叩くことがあって...[l][cm]
-行儀が悪いからやめさせようと思ったんですが、叱っても全然やめてくれなくて…[l][cm]
-
-#sakura
-子どもはいろいろ叩いてみるのが好きよね。[l][cm]
-
-#yuuta
-そうなんですけどね。[l][r]
+最近、子どもがお皿の料理を掴んでお皿の外に放り出すことがあって...[l][cm]
 やっぱり行儀が悪いことはやめさせたくて、イライラしちゃうんですよね...[l][cm]
-
 
 [cm]
 #sakura
 それってこんな感じかしら？[l][r]
 
-[image name="table" layer="1" x="0" y="0" height="420" storage="table3.png" time="300" x="450" y="40"][l]
+
+[iscript]
+
+let vFrame = document.createElement('div');
+vFrame.id = 'vFrame';
+vFrame.style.backgroundColor = 'black';
+vFrame.style.width = '520px;'
+vFrame.style.height = '520px;'
+vFrame.style.position = "absolute";
+vFrame.style.top = "0px";
+vFrame.style.left = "400px";
+vFrame.style.overflow = "hidden";
+
+let video = document.createElement('video');
+video.src = "./data/video/throw.mp4";
+video.width = "400";
+
+video.setAttribute('autoplay', 'autoplay');
+
+let l = document.getElementsByClassName('base_fore')[0];
+vFrame.appendChild(video);
+l.appendChild(vFrame);
+[endscript]
+
+[l]
 
 [cm]
 #yuuta
 そうそう、こんな感じです！[r]
-料理を食べずに、食卓のお皿をずっとキンキン、コンコン叩いていたんですよね。[l][r]
+料理をわしづかみにして、お皿の外に出しちゃうんです。[l][r]
 
 *q1
 [cm]
 #sakura
-ゆうたさんは、どうしてお子さんが食器を叩いていたんだと思う？[l][r]
+ゆうたさんは、どうしてお子さんがこうしていたんだと思う？[l][r]
 
 [cm]
 #yuuta
 うーん、そうですねぇ…[l][r]
-わざと行儀の悪いことして、大人を困らせて楽しんでいるとか？[l][cm]
+
+[glink  color="white" font_color="#000000"  size="24" width="400" x="380" y="140"  text="【１】わざとやって大人の反応を楽しんでいる"  target="**select1"  ]
+[glink  color="white" font_color="#000000" size="24" width="400" x="380" y="240"  text="【２】てのひらの開閉を試している"  target="**select2"  ]
+[s]
+
+*select1
+
+わざと行儀の悪いことして、大人の反応を楽しんでいるとか？[l][cm]
 
 #sakura
-うーん、まあそれも無くはないと思うけど...[l][r]
+うーん、まあ、それもあるかもしれないけれど...[l][r]
 子どもの発達という観点からは、別の捉え方もできるのよね。[l][cm]
 
 #yuuta
 ...というと？[l][cm]
 
-[cm]
 #sakura
-「幼児の行動はすべて発達の過程の表れだ」と考えるのよ。[l][cm]
-お子さんの例だと、叩く物によって音が違うことや、叩いたときの跳ね返りの感触などを確認したりして、感覚に関するたくさんのことを学んでいるの。[l][cm]
-それに、自分でいろいろな音を出し分けられることがとっても嬉しいのよ。[l][cm]
+「幼児の行動はすべて発達の過程の表れだ」と捉えるのよ。[l][cm]
+お子さんの例だと、手のひらの開閉の機能を試しているの。[l][cm]
+自分の思ったとおりのところで手を開いて、そこに落とせたことが、とっても嬉しいのよ。[l][cm]
 
 #yuuta
 そうだったんですね…！[l][cm]
-子どもがどうしてそうしたがっていたのかを全然理解しようとしていませんでした。[l][r]
+子どもの気持ちを全然理解しようとしていませんでした。[l][r]
 それどころか、ずっとやめさせようと頑張っていて、とてもイライラしていました。[l][cm]
 
 #sakura
 子どもがいま、何に注目して、何を感じているのかをよく観察すると良いと思うわ。[l][cm]
 
+[jump target=*common]
+
+
+*select2
+
+これは、自分の手の平の開閉を試しているんですよね。[l][cm]
+
+#sakura
+あら、よく知っているわね。この講義をいちど見たことがあるのかしら。[l][cm]
+基本的に、幼児の行動は「すべて発達の過程の表れだ」と捉えられるのよね。[l][cm]
+自分の思ったとおりのところで手を開いて、そこに落とせたことが、とっても嬉しいのよ。[l][cm]
+
+*common
+
+[cm]
+
 #yuuta
-はい、そうしてみます。[l][cm]
-でも...なんというか、食器を叩くのはやっぱり気になるんですよね。[l][cm]
+でも...なんというか、食べ物を散らかすのはやっぱり気になるんですよね。[l][cm]
 
 #sakura
 もちろん、その気持ちもわかるわ。[l][cm]
-そしたら、食器のかわりに、好きなだけ叩いていろんな音を出せる物を用意してあげると良いと思うわよ。[l][cm]
-たとえば、いつも遊んでいる部屋に、いろんな素材の物を集めて、一緒に叩いたりして遊ぶの。[l][cm]
-満足いくまで叩いていろんな音を聞ける経験をたくさんすれば、食器を叩くことも減っていくんじゃないかしら。[l][cm]
+そしたら、食べ物のかわりに好きなだけ掴んで離せる物を用意してあげると良いと思うわよ。[l][cm]
+たとえば...[r]
+
+[iscript]
+let l = document.getElementsByClassName('base_fore')[0];
+l.removeChild(vFrame);
+[endscript]
+
+[image layer="1" x="0" y="0" height="420" storage="earth.jpeg" time="300" x="450" y="40"]
+
+公園の砂場や地面で、一緒に砂や泥を掴んで投げたりして遊ぶの。[l][cm]
+満足いくまで物を掴んでは離す経験をたくさんすれば、食べ物を投げることも減っていくんじゃないかしら。[l][cm]
 
 #yuuta
-なるほど！子どもの意欲自体は大事ですもんね。[l][r]
+なるほど！[r]
 子どもが好きなだけ発達の行動ができる環境を大人が作ってあげるんですね！[l][cm]
 
 #sakura
@@ -122,34 +168,4 @@
 はい！さくら先生、ありがとうございました！[l][cm]
 
 #
-<おしまい>[l][cm]
-
-[free name="table" layer="1" ]
-[chara_hide_all]
-
-ここで復習問題です。[l][r]
-この絵では、子どもが、サラダボウルの野菜を、手元にあるフォークではなく、指でつまみ上げて食べています。[l][cm]
-
-*question
-さくら先生が言っていたように、子どもの行動はすべて発達の過程と捉えるならば、この行動をどのように解釈しますか？
-
-[image layer="1" x="0" y="0" height="420" storage="table2.png" time="300" x="200" y="40"][l]
-
-[glink  color="white" font_color="#000000"  size="24"  x="360"  width="400" x="620" y="50"  text="【１】せっかくフォークがあるのに…行儀が悪い"  target="**select1"  ]
-[glink  color="white" font_color="#000000" size="24"  x="360"  width="400" x="620" y="150"  text="【２】小さいものを上手くつまめるのを確認しているんだな"  target="**select2"  ]
-[s]
-
-*select1
-残念、不正解です！[l][r]
-もういちど考えてみましょう。[l][cm]
-
-@jump target=*question
-
-*select2
-正解です！
-
-子どもの行動はすべて発達の過程の表れです。[l][r]
-大人の価値観からは良くないだけの行動に見えても、子どもがいま何に注目しているのかをよく観察してみましょう。[l][cm]
-すると、自身の身体や感覚のどんな機能を発達させようとしているかが見えてきます。[l][cm]
-
 <おしまい>
