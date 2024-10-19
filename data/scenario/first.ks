@@ -51,12 +51,15 @@
 
 let vFrame = document.createElement('div');
 vFrame.id = 'vFrame';
+vFrame.style.backgroundColor = '#000';
+vFrame.style.width = '400px;'
+vFrame.style.height = '400px;'
 vFrame.style.position = "absolute";
 vFrame.style.top = "20px";
 vFrame.style.left = "340px";
 vFrame.style.zIndex = "10";
-vFrame.style.borderLeft = "solid 100px #333";
-vFrame.style.borderRight = "solid 100px #333";
+vFrame.style.borderLeft = "solid 100px #000";
+vFrame.style.borderRight = "solid 100px #000";
 
 let video = document.createElement('video');
 video.src = "./data/video/throw.mp4";
