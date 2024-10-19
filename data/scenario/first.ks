@@ -51,23 +51,22 @@
 
 let vFrame = document.createElement('div');
 vFrame.id = 'vFrame';
-vFrame.style.backgroundColor = 'black';
-vFrame.style.width = '520px;'
-vFrame.style.height = '520px;'
 vFrame.style.position = "absolute";
-vFrame.style.top = "0px";
-vFrame.style.left = "400px";
-vFrame.style.overflow = "hidden";
+vFrame.style.top = "20px";
+vFrame.style.left = "340px";
+vFrame.style.zIndex = "10";
+vFrame.style.borderLeft = "solid 100px #333";
+vFrame.style.borderRight = "solid 100px #333";
 
 let video = document.createElement('video');
 video.src = "./data/video/throw.mp4";
 video.width = "400";
-
 video.setAttribute('autoplay', 'autoplay');
 
 let l = document.getElementsByClassName('base_fore')[0];
 vFrame.appendChild(video);
 l.appendChild(vFrame);
+
 [endscript]
 
 [l]
