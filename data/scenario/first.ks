@@ -38,6 +38,24 @@
 [s]
 
 *hasami
+#sakura
+ごめんなさい、この講義は準備中なの。[r]
+こんな動画を見ながら説明する予定よ。
+
+[filter layer="all" brightness="30"]
+[html top="50" left="450" ]
+  <video src="./data/video/hasami.mp4" width=400 autoplay controls style="width: 400">
+[endhtml]
+
+[glink  color="white" font_color="#000000" size="24" width="80" x="850" y="10"  text="次へ"  target="*endhasami" ]
+[s]
+
+*endhasami
+[free_filter]
+
+完成するまでは、別の講義を選んでみてね。[l][cm]
+[jump target="**menu_start" ]
+
 *namae
 ごめんなさい、この講義は準備中なの。[r]
 別の講義を選んでみてね。[l][cm]
